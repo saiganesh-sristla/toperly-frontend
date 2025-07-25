@@ -18,6 +18,15 @@ export default {
       },
     },
     extend: {
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.4 },
+        },
+      },
+      animation: {
+        blink: 'blink 0.3s ease-in-out',
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         merriweather: ["Merriweather", "serif"],
